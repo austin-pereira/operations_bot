@@ -1,9 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "*.py": {
-      "maxDuration": 30,
-      "excludeFiles": "{tests/**,__tests__/**,**/*.test.py,**/test_*.py,fixtures/**,__fixtures__/**,testdata/**,sample-data/**,static/**,assets/**}"
-    }
-  }
+  "builds": [{ "src": "index.py", "use": "@vercel/python" }],
+  "routes": [{ "src": "/(.*)", "dest": "index.py" }]
 }
