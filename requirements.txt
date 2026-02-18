@@ -1,0 +1,6 @@
+fastapi==0.117.1
+uvicorn==0.30.6
+python-multipart==0.0.9
+notion-client==2.2.1
+twilio==9.2.3
+openai==1.47.0
